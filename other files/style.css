@@ -1,0 +1,78 @@
+body {
+    overflow-y: auto
+}
+
+.ui.container {
+    margin-top: 4em;
+}
+
+.own-class-sidebar {
+    color: white;
+}
+
+.own-class-home {
+    color: #660000;
+}
+
+.own-class-block {
+    color: #660000;
+}
+
+.own-class-smile {
+    color: #660000;
+}
+
+.own-class-search {
+    color: #660000;
+}
+
+.editor {
+    height: 10em;
+    box-shadow: 0.4px 0.3px 1px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2em;
+    resize: vertical;
+    overflow: auto;
+}
+
+.own-edit-modal {
+    padding: 2em;
+}
+
+.editor-modal {
+    height: 20em;
+    box-shadow: 0.4px 0.3px 1px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 4em;
+    resize: vertical;
+    overflow: auto;
+}
+
+.ql-toolbar {
+    margin-bottom: 0.2em;
+    background: #efefef;
+    box-shadow: 0.2px 0.1px 1px 1px rgba(0, 0, 0, 0.2);
+    border-style: none;
+}
+
+.own-checkmark {
+    float: right;
+}
+
+.own-card {}
+
+.own-card-fav {}
+
+.own-description {
+    overflow-y: auto;
+    max-height: 20em;
+    flex: 1;
+    /* Shrink and grow according to available height */
+    flex-basis: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.own-video-link{
+    box-shadow: 0.2px 0.1px 1px 1px rgba(0, 0, 0, 0.2);
+}

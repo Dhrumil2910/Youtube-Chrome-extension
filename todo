@@ -1,0 +1,42 @@
+end points for:
+
+	Video crud operations
+	Authentication
+	search : Tag search and main search
+
+
+
+// Dhrumil
+	Main Items on the youtube page:
+	------------------------------
+		--> Notes : Add, Update, (Delete), (Read)
+		--> Bookmark
+		--> Tagging
+		--> Share
+		--> Tag highlight in the show notes.
+		--> If ytp-player-content is nt present then add notes to ytp-chrome-controls. // imp
+		--> bottom arrow of the note
+
+	Main items on the chrome extension:
+	-----------------------------------
+		--> Search feature >
+		--> delete the video >
+		--> update the tags
+		--> Authentication
+		--> Infinite scrolling
+		--> Side bar icons and functionality
+		--> Login and Logout
+
+
+
+To stop the video while adding notes
+Add and edit a note 
+Check -- bookmark, tag
+error handling
+
+Shortcuts:
+----------
+	Add a note: Ctrl + Shift + A
+	Close the Add Note Modal : Esc
+	Bookmark a Video : Ctrl + Shift + S // TODO
+	Tag a  Video : Ctrl + Shift + X

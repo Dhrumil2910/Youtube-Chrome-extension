@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Semantic UI</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+
+<body style="background-color: rgb(245, 245, 245) ">
+    <div class="ui sidebar bottom horizontal inverted icon very thin menu main_sidebar" style="background: white">
+        <a href="#" class="item">
+            <i class="large home icon own-class-home"></i>
+        </a>
+        <a href="#" class="item">
+            <i class="large block layout icon own-class-block"></i>
+        </a>
+        <a href="#" class="item">
+            <i class="large smile icon own-class-smile"></i>
+        </a>
+        <a href="#" class="item">
+            <i class="large search icon own-class-search"></i>
+        </a>
+    </div>
+    <div class="ui basic icon top fixed borderless menu own-menu" style="background: rgb(245, 245, 245) ; opacity:1">
+        <a id="main_menu_toggle" class="item own-sidebar-icon">
+            <i class="sidebar icon own-class-sidebar"></i>
+        </a>
+        <div class="item own-heading-app">
+            <h4 class="header own-header" style="color: #660000">
+                <b>lapse</b>
+            </h4>
+        </div>
+        <div class="item own-search-area" style="padding:0; height:3.5em;display: none">
+            <div class="ui category search">
+                <div class="ui icon input" style="margin-right: -28em; width: 30em;height: 100%; border-radius: 0;border-style: none">
+                    <input class="prompt own-search-input" type="text" placeholder="Search ..." style="border-radius: 0; display: hidden; border-style: none;font-family: 'Montserrat', sans-serif;color: grey; font-size: 1em">
+                    <i class="search large icon"></i>
+                </div>
+            </div>
+        </div>
+        <div class="right menu">
+            <a class="item own-search">
+                <i class="search icon own-search-icon" style="color:#660000;"></i>
+            </a>
+        </div>
+    </div>
+    <hr class="colored">
+    <div class="ui fluid container">
+        <div class="ui modal own-tag-modal" style="border-radius: 90%">
+            <div class="header" style="background: white ;color: #660000">Tags</div>
+            <div class="content">
+                <div class="ui fluid multiple search selection dropdown">
+                    <input name="tags" type="hidden" value="" id="tags-input">
+                    <i class="dropdown icon"></i>
+                    <div class="default text"></div>
+                </div>
+            </div>
+            <div class="actions">
+                <div class="ui approve mini button own-tag-modal-button" style="background: #660000; color:white">Edit</div>
+            </div>
+        </div>
+        <div class="ui modal own-share-modal" style="border-radius: 90%">
+            <div class="header" style="background: #660000;color: white">Copy Link</div>
+            <div class="content">
+                <div class="ui action input" style="width: 100% ">
+                    <input type="text" value="http://ww.short.url/c0opq" style="width: 100%">
+                </div>
+            </div>
+        </div>
+        <span>
+            <div style="display: inline;">
+                <h3 class="heading" style="width: 40%">Bookmarked Videos</h3>
+            </div>
+        </span>
+        <span>
+            <div class="ui right pointing dropdown icon button" style="margin-top: -10em;margin-left: 25.6em;display: inline; background-color:rgba(0,0,0,0)">
+                <i class="filter icon" style="margin-top: -1.4em;"></i>
+                <div class="menu" style="margin-top: -1.3em;">
+                    <div class="ui left search icon input">
+                        <i class="search icon"></i>
+                        <input type="text" name="search" placeholder="Search issues...">
+                    </div>
+                    <div class="divider"></div>
+                    <div class="header">
+                        <i class="tags icon"></i> Filter by tag
+                    </div>
+                    <div class="item">
+                        <div class="ui red empty circular label"></div>
+                        Important
+                    </div>
+                    <div class="item">
+                        <div class="ui blue empty circular label"></div>
+                        Announcement
+                    </div>
+                    <div class="item">
+                        <div class="ui black empty circular label"></div>
+                        Discussion
+                    </div>
+                </div>
+            </div>
+        </span>
+        <hr class="top-sep">
+        <div class="ui grid own-video-grid">
+        </div>
+        <hr class="own-bottom-hr">
+    </div>
+    <script type="text/javascript" src="./js/global-dependency/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="./js/global-dependency/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./js/global-dependency/semantic.min.js"></script>
+    <script type="text/javascript" src="./js/helper-ex-functions.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>

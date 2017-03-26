@@ -1,0 +1,43 @@
+{
+    "manifest_version": 2,
+    "name": "Semantic UI",
+    "description": "WebUI Interface",
+    "version": "1.0",
+    "options_page": "index.html",
+
+    "browser_action": {
+        "default_icon": "/images/icon.png",
+        "default_title": "Persistence",
+        "default_popup": "main.html"
+
+    },
+    "background": {
+        "scripts": ["/js/background.js"],
+        "persistent": true
+    },
+    "content_scripts": [{
+        "matches": ["*://www.youtube.com/*"],
+        "js": ["/js/global-dependency/jquery-3.1.0.min.js", "/js/global-dependency/jquery-ui.min.js","/js/global-dependency/jquery.caret.min.js","/js/global-dependency/jquery.tag-editor.min.js","/js/global-dependency/semantic.min.js","/js/helper-functions.js", "/js/youtubeSC.js"],
+        "css": ["/font-awesome-4.7.0/css/font-awesome.css","/font-awesome-4.7.0/css/font-awesome.min.css","/css/jquery-ui.css","/css/jquery.tag-editor.css","/css/semantic.min.css","/css/ytpage.css"],
+        "run_at": "document_end",
+        "all_frames": true
+    },{
+        "matches": ["https://127.0.0.1/*"],
+        "js": ["/js/global-dependency/login.js"],
+        "run_at": "document_end",
+        "all_frames": true
+    }],
+
+    "permissions": [
+        "cookies",
+        "tabs",
+        "activeTab",
+        "notifications",
+        "<all_urls>",
+        "webNavigation"
+    ],
+    "web_accessible_resources": [
+        "font-awesome-4.7.0/fonts/*"
+
+    ]
+}
